@@ -1,0 +1,5 @@
+app: main.o
+		g++ -o app main.o
+main.o: main.cpp basic.h derived.h
+		g++ -c main.cpp
+		echo done.
